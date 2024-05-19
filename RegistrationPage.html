@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atmos Registration</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-200 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-8 rounded shadow-md w-full max-w-md">
+      <h1 class="text-3xl text-center text-gray-800 mb-6">Atmos</h1>
+      <h2 class="text-xl text-center mb-4">Create an Account</h2>
+      <form action="/register" method="post" class="space-y-4">
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Name"
+          required
+          class="w-full p-3 border border-gray-300 rounded"
+        />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email"
+          required
+          class="w-full p-3 border border-gray-300 rounded"
+        />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Password"
+          required
+          class="w-full p-3 border border-gray-300 rounded"
+        />
+        <input
+          type="password"
+          id="confirm_password"
+          name="confirm_password"
+          placeholder="Confirm Password"
+          required
+          class="w-full p-3 border border-gray-300 rounded"
+        />
+        <button
+          type="submit"
+          class="w-full bg-gray-800 text-white p-3 rounded hover:bg-gray-700"
+        >
+          Register
+        </button>
+      </form>
+      <a
+        href="login.html"
+        class="block text-center text-gray-600 mt-4 hover:underline"
+        >Already have an account? Login</a
+      >
+    </div>
+  </body>
+</html>
